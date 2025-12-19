@@ -1,0 +1,94 @@
+<div class="screen s0-entry">
+  <!-- Active Profile Banner -->
+  <div class="active-profile-banner" id="profile-banner">
+    <div class="profile-avatar-small" id="profile-avatar">
+      <!-- Avatar will be set dynamically -->
+    </div>
+    <div class="profile-greeting">
+      <span class="greeting-text">Hello,</span>
+      <span class="profile-name" id="active-profile-name">Learner</span>
+    </div>
+    <button class="switch-profile-btn" id="btn-switch-profile">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+        <circle cx="8.5" cy="7" r="4"/>
+        <polyline points="17 11 19 13 23 9"/>
+      </svg>
+      Switch
+    </button>
+  </div>
+
+  <!-- Logo Section -->
+  <div class="logo-section compact">
+    <h1 class="welcome-title">What would you like to do?</h1>
+  </div>
+
+  <!-- Action Cards -->
+  <div class="action-cards">
+    <!-- Create Assessment Card (Primary) -->
+    <div class="action-card primary" id="btn-create">
+      <div class="card-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
+          <polyline points="14 2 14 8 20 8"/>
+          <line x1="12" y1="18" x2="12" y2="12"/>
+          <line x1="9" y1="15" x2="15" y2="15"/>
+        </svg>
+      </div>
+      <div class="card-content">
+        <div class="card-title">Create New Assessment</div>
+        <div class="card-subtitle">Practice any chapter with custom difficulty</div>
+      </div>
+      <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="9 18 15 12 9 6"/>
+      </svg>
+    </div>
+
+    <!-- Upload Answer Sheet Card -->
+    <div class="action-card" id="btn-upload">
+      <div class="card-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+          <polyline points="17 8 12 3 7 8"/>
+          <line x1="12" y1="3" x2="12" y2="15"/>
+        </svg>
+      </div>
+      <div class="card-content">
+        <div class="card-title">Upload Answer Sheet</div>
+        <div class="card-subtitle">Get your handwritten answers graded</div>
+      </div>
+      <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="9 18 15 12 9 6"/>
+      </svg>
+    </div>
+
+    <!-- View Learning Journey Card -->
+    <div class="action-card" id="btn-journey">
+      <div class="card-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="12" y1="20" x2="12" y2="10"/>
+          <line x1="18" y1="20" x2="18" y2="4"/>
+          <line x1="6" y1="20" x2="6" y2="16"/>
+        </svg>
+      </div>
+      <div class="card-content">
+        <div class="card-title">My Learning Journey</div>
+        <div class="card-subtitle" id="journey-subtitle">Track your progress and improvements</div>
+        <div class="journey-stats" id="journey-stats" style="display: none;">
+          <span class="stat-item">
+            <span class="stat-value" id="stat-total">0</span>
+            <span class="stat-label">Completed</span>
+          </span>
+          <span class="stat-divider">•</span>
+          <span class="stat-item">
+            <span class="stat-value" id="stat-avg">0%</span>
+            <span class="stat-label">Avg Score</span>
+          </span>
+        </div>
+      </div>
+      <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="9 18 15 12 9 6"/>
+      </svg>
+    </div>
+  </div>
+</div>

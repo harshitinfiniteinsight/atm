@@ -1,0 +1,162 @@
+<div class="screen s3-configure">
+  <!-- Header -->
+  <div class="screen-header">
+    <h1>Configure Assessment</h1>
+    <p class="subtitle">Customize your practice session</p>
+  </div>
+
+  <!-- Chapters Section (hidden for Quick type) -->
+  <div class="config-section" id="chapters-section">
+    <div class="section-header">
+      <label class="section-label">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+          <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+        </svg>
+        Select Chapters
+        <span class="info-icon">?
+          <span class="tooltip">Choose 1–5 chapters to focus your practice on specific topics</span>
+        </span>
+      </label>
+      <span class="section-value" id="chapters-count">0 selected</span>
+    </div>
+    <div class="multi-select-container" id="chapters-container">
+      <!-- Chapters will be populated dynamically -->
+    </div>
+    <p class="form-error hidden" id="chapters-error">Please select 1–5 chapters</p>
+  </div>
+
+  <!-- Difficulty Section -->
+  <div class="config-section">
+    <div class="section-header">
+      <label class="section-label">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 20v-6M6 20V10M18 20V4"/>
+        </svg>
+        Difficulty Level
+        <span class="info-icon">?
+          <span class="tooltip">Easy: Basic recall questions. Medium: Application questions. Hard: Analysis & problem-solving.</span>
+        </span>
+      </label>
+    </div>
+    <div class="difficulty-options">
+      <button class="difficulty-pill" data-difficulty="easy">
+        <span class="pill-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+            <line x1="9" y1="9" x2="9.01" y2="9"/>
+            <line x1="15" y1="9" x2="15.01" y2="9"/>
+          </svg>
+        </span>
+        <span class="pill-label">Easy</span>
+      </button>
+      <button class="difficulty-pill selected" data-difficulty="medium">
+        <span class="pill-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <circle cx="12" cy="12" r="3"/>
+          </svg>
+        </span>
+        <span class="pill-label">Medium</span>
+      </button>
+      <button class="difficulty-pill" data-difficulty="hard">
+        <span class="pill-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>
+          </svg>
+        </span>
+        <span class="pill-label">Hard</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Question Count Section -->
+  <div class="config-section">
+    <div class="section-header">
+      <label class="section-label">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/>
+          <line x1="12" y1="8" x2="12" y2="12"/>
+          <line x1="12" y1="16" x2="12.01" y2="16"/>
+        </svg>
+        Number of Questions
+      </label>
+    </div>
+    <div class="count-stepper">
+      <button class="stepper-btn" id="btn-decrease" disabled>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"/>
+        </svg>
+      </button>
+      <div class="count-display">
+        <div class="count-value" id="count-value">10</div>
+        <div class="count-label">questions</div>
+      </div>
+      <button class="stepper-btn" id="btn-increase">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="12" y1="5" x2="12" y2="19"/>
+          <line x1="5" y1="12" x2="19" y2="12"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Format Section -->
+  <div class="config-section">
+    <div class="section-header">
+      <label class="section-label">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+          <line x1="8" y1="21" x2="16" y2="21"/>
+          <line x1="12" y1="17" x2="12" y2="21"/>
+        </svg>
+        Assessment Format
+        <span class="info-icon">?
+          <span class="tooltip">Digital: Answer on screen. Print: Download PDF, write on paper, upload for grading.</span>
+        </span>
+      </label>
+    </div>
+    <div class="format-toggle">
+      <button class="format-option active" data-format="digital">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+          <line x1="12" y1="18" x2="12.01" y2="18"/>
+        </svg>
+        <span class="format-label">
+          Digital
+          <button class="info-tooltip-btn" type="button">
+            i
+            <span class="tooltip-popup">Answer questions directly on your device. Get instant grading and detailed feedback.</span>
+          </button>
+        </span>
+        <span class="format-hint">Answer on screen</span>
+      </button>
+      <button class="format-option" data-format="print">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 6 2 18 2 18 9"/>
+          <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>
+          <rect x="6" y="14" width="12" height="8"/>
+        </svg>
+        <span class="format-label">
+          Manual
+          <button class="info-tooltip-btn" type="button">
+            i
+            <span class="tooltip-popup">Download PDF, write answers on paper, then scan/upload for AI-powered grading.</span>
+          </button>
+        </span>
+        <span class="format-hint">PDF + Upload</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Generate Button -->
+  <div class="mt-xl">
+    <button id="btn-generate" class="btn btn-primary btn-lg btn-block">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+      </svg>
+      Generate Assessment
+    </button>
+  </div>
+</div>

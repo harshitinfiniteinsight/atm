@@ -1,0 +1,217 @@
+<div class="screen s2-assessment-type">
+  <!-- Header -->
+  <div class="screen-header">
+    <h1>What would you like to practice?</h1>
+    <p class="subtitle">Select subject and assessment type</p>
+  </div>
+
+  <!-- Subject Selection -->
+  <div class="subject-section">
+    <label class="form-label">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+      </svg>
+      Subject
+    </label>
+    <div class="subject-chips" id="subject-chips">
+      <button class="subject-chip" data-subject="Mathematics">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="12" y1="5" x2="12" y2="19"/>
+          <line x1="5" y1="12" x2="19" y2="12"/>
+        </svg>
+        Mathematics
+      </button>
+      <button class="subject-chip" data-subject="Science">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 3h6l3 7-6 11-6-11 3-7z"/>
+          <path d="M9 3l3 7"/>
+          <path d="M15 3l-3 7"/>
+        </svg>
+        Science
+      </button>
+      <button class="subject-chip" data-subject="English">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 7V4h16v3"/>
+          <path d="M9 20h6"/>
+          <path d="M12 4v16"/>
+        </svg>
+        English
+      </button>
+      <button class="subject-chip" data-subject="Social Science">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/>
+          <line x1="2" y1="12" x2="22" y2="12"/>
+          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+        </svg>
+        Social Science
+      </button>
+      <button class="subject-chip" data-subject="Hindi">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 7h16"/>
+          <path d="M12 7v14"/>
+          <path d="M7 21h10"/>
+        </svg>
+        Hindi
+      </button>
+    </div>
+  </div>
+
+  <!-- Assessment Type Section -->
+  <div style="margin-top: 24px; margin-bottom: 12px;">
+    <label class="form-label" style="font-size: 13px; font-weight: 700; color: var(--color-text);">Assessment Type</label>
+  </div>
+
+  <!-- Type Cards -->
+  <div class="type-cards">
+    <!-- Chapter-wise -->
+    <div class="type-card" data-type="chapter-wise">
+      <div class="type-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+          <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+          <line x1="8" y1="6" x2="16" y2="6"/>
+          <line x1="8" y1="10" x2="16" y2="10"/>
+          <line x1="8" y1="14" x2="12" y2="14"/>
+        </svg>
+      </div>
+      <div class="type-content">
+        <div class="type-header">
+          <span class="type-title">
+            Chapter-wise
+            <button class="info-tooltip-btn" type="button">
+              i
+              <span class="tooltip-popup">Focus on specific chapters you want to practice. Choose 1-5 chapters and get targeted questions.</span>
+            </button>
+          </span>
+          <span class="type-badge">Focused</span>
+        </div>
+        <p class="type-description">Test yourself on 1–5 specific chapters of your choice</p>
+        <div class="type-meta">
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+            15–30 min
+          </span>
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="12" y1="8" x2="12" y2="12"/>
+              <line x1="12" y1="16" x2="12.01" y2="16"/>
+            </svg>
+            5–30 questions
+          </span>
+        </div>
+      </div>
+      <div class="check-indicator">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Practice -->
+    <div class="type-card" data-type="practice">
+      <div class="type-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 20h9"/>
+          <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+        </svg>
+      </div>
+      <div class="type-content">
+        <div class="type-header">
+          <span class="type-title">
+            Full Practice
+            <button class="info-tooltip-btn" type="button">
+              i
+              <span class="tooltip-popup">Complete assessment covering your entire syllabus. Best for comprehensive revision before exams.</span>
+            </button>
+          </span>
+          <span class="type-badge">Comprehensive</span>
+        </div>
+        <p class="type-description">Comprehensive practice across your entire syllabus</p>
+        <div class="type-meta">
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+            30–45 min
+          </span>
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="12" y1="8" x2="12" y2="12"/>
+              <line x1="12" y1="16" x2="12.01" y2="16"/>
+            </svg>
+            15–30 questions
+          </span>
+        </div>
+      </div>
+      <div class="check-indicator">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Quick -->
+    <div class="type-card" data-type="quick">
+      <div class="type-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+        </svg>
+      </div>
+      <div class="type-content">
+        <div class="type-header">
+          <span class="type-title">
+            Quick Test
+            <button class="info-tooltip-btn" type="button">
+              i
+              <span class="tooltip-popup">Fast 10-minute quiz with 5-10 questions. Perfect for daily practice or quick revision sessions.</span>
+            </button>
+              </svg>
+            </button>
+          </span>
+          <span class="type-badge">10 min</span>
+        </div>
+        <p class="type-description">Short quiz to refresh your memory — perfect when you're short on time</p>
+        <div class="type-meta">
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+            ~10 min
+          </span>
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="12" y1="8" x2="12" y2="12"/>
+              <line x1="12" y1="16" x2="12.01" y2="16"/>
+            </svg>
+            5–10 questions
+          </span>
+        </div>
+      </div>
+      <div class="check-indicator">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- Continue Button -->
+  <div class="mt-xl">
+    <button id="btn-continue" class="btn btn-primary btn-lg btn-block" disabled>
+      Continue
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="5" y1="12" x2="19" y2="12"/>
+        <polyline points="12 5 19 12 12 19"/>
+      </svg>
+    </button>
+  </div>
+</div>

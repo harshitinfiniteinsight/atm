@@ -1,0 +1,118 @@
+<div class="screen s7-report">
+  <!-- Assessment Context (for historical views) -->
+  <div class="assessment-context" id="assessment-context" style="display: none;">
+    <div class="context-badge">
+      <span class="context-subject" id="context-subject">Mathematics</span>
+      <span class="context-date" id="context-date">Jan 15</span>
+    </div>
+  </div>
+
+  <!-- Score Section -->
+  <div class="score-section">
+    <div class="score-card">
+      <div class="score-ring-container">
+        <svg class="score-ring" viewBox="0 0 120 120">
+          <circle class="score-ring-bg" cx="60" cy="60" r="52" />
+          <circle class="score-ring-progress" id="score-ring-progress" cx="60" cy="60" r="52" />
+        </svg>
+        <div class="score-inner">
+          <div class="score-value" id="score-value">15</div>
+          <div class="score-divider"></div>
+          <div class="score-total-value" id="score-total">20</div>
+        </div>
+      </div>
+      <div class="score-percentage" id="score-percentage">75%</div>
+      <div class="score-label">Great work! Keep it up! 🎉</div>
+    </div>
+  </div>
+
+  <!-- Question Detail Modal -->
+  <div class="modal-overlay" id="question-modal" style="display: none;">
+    <div class="modal-content question-detail-modal">
+      <button class="modal-close" id="modal-close">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+      <div class="modal-header">
+        <div class="modal-status" id="modal-status">
+          <span class="status-icon"></span>
+        </div>
+        <div class="modal-question-num" id="modal-question-num">Question 1</div>
+      </div>
+      <div class="modal-body">
+        <div class="question-text" id="modal-question-text">What is 15 + 27?</div>
+        <div class="answer-section">
+          <div class="answer-row">
+            <span class="answer-label">Correct Answer:</span>
+            <span class="answer-value correct" id="modal-correct-answer">42</span>
+          </div>
+          <div class="answer-row" id="modal-student-row">
+            <span class="answer-label">Your Answer:</span>
+            <span class="answer-value" id="modal-student-answer">40</span>
+          </div>
+        </div>
+        <div class="feedback-box" id="modal-feedback">
+          <div class="feedback-box-title">Feedback</div>
+          <div class="feedback-box-content" id="modal-feedback-content">Review basic addition with carrying.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Results Summary -->
+  <div class="results-section">
+    <div class="results-header">
+      <h3 class="results-title">Question Breakdown</h3>
+      <button class="results-toggle" id="btn-toggle-results">Show all</button>
+    </div>
+    <div class="results-list" id="results-list">
+      <!-- Results will be rendered dynamically -->
+    </div>
+  </div>
+
+  <!-- Feedback Section -->
+  <div class="feedback-section">
+    <div class="feedback-card">
+      <div class="feedback-header">
+        <svg class="feedback-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/>
+          <line x1="12" y1="16" x2="12" y2="12"/>
+          <line x1="12" y1="8" x2="12.01" y2="8"/>
+        </svg>
+        <span class="feedback-title">What to focus on next</span>
+      </div>
+      <div class="feedback-content" id="feedback-content">
+        <p>Loading feedback...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Action Buttons -->
+  <div class="action-buttons">
+    <button id="btn-retake" class="btn btn-secondary btn-lg btn-block">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="1 4 1 10 7 10"/>
+        <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/>
+      </svg>
+      Retake Assessment
+    </button>
+    <button id="btn-new" class="btn btn-primary btn-lg btn-block">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="12" y1="5" x2="12" y2="19"/>
+        <line x1="5" y1="12" x2="19" y2="12"/>
+      </svg>
+      Create New Assessment
+    </button>
+    <button id="btn-back-history" class="btn btn-secondary btn-lg btn-block" style="display: none;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="15 18 9 12 15 6"/>
+      </svg>
+      Back to History
+    </button>
+    <button id="btn-exit" class="btn btn-ghost btn-block">
+      Exit to Home
+    </button>
+  </div>
+</div>

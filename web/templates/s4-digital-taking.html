@@ -1,0 +1,106 @@
+<div class="screen s4-digital-taking">
+  <!-- Progress Section -->
+  <div class="progress-section">
+    <div class="progress-text">
+      <span>Question <span class="current" id="current-question">1</span> of <span id="total-questions">10</span></span>
+      <span id="progress-percent">10%</span>
+    </div>
+    <div class="progress-container">
+      <div class="progress-bar" id="progress-bar" style="width: 10%"></div>
+    </div>
+  </div>
+
+  <!-- Question Container -->
+  <div class="question-container">
+    <div class="question-card">
+      <div class="flex items-center gap-sm mb-md">
+        <span class="question-number" id="question-number">1</span>
+        <span class="question-type-badge" id="question-type">MCQ</span>
+      </div>
+      
+      <p class="question-text" id="question-text">
+        Loading question...
+      </p>
+
+      <div class="answer-area" id="answer-area">
+        <!-- Answer options will be rendered here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Voice Input Button (floating) -->
+  <div class="voice-input-container" id="voice-input-container" style="display: none;">
+    <button class="voice-input-btn" id="voice-input-btn" title="Voice input">
+      <div class="voice-btn-inner">
+        <svg class="mic-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
+          <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+          <line x1="12" y1="19" x2="12" y2="23"/>
+          <line x1="8" y1="23" x2="16" y2="23"/>
+        </svg>
+        <div class="recording-indicator">
+          <span class="pulse"></span>
+          <span class="pulse-ring"></span>
+        </div>
+      </div>
+      <span class="voice-btn-label">Voice</span>
+    </button>
+  </div>
+
+  <!-- Voice Recording Feedback -->
+  <div class="voice-feedback" id="voice-feedback" style="display: none;">
+    <div class="voice-feedback-header">
+      <div class="voice-status">
+        <span class="status-dot"></span>
+        <span class="status-text">Listening...</span>
+      </div>
+    </div>
+    <div class="voice-feedback-content">
+      <div class="voice-visualizer">
+        <div class="voice-wave">
+          <span class="wave-bar"></span>
+          <span class="wave-bar"></span>
+          <span class="wave-bar"></span>
+          <span class="wave-bar"></span>
+          <span class="wave-bar"></span>
+          <span class="wave-bar"></span>
+          <span class="wave-bar"></span>
+        </div>
+      </div>
+      <p class="voice-transcript" id="voice-transcript">Speak your answer...</p>
+    </div>
+    <div class="voice-feedback-actions">
+      <button class="voice-cancel-btn" id="voice-cancel-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+        Cancel
+      </button>
+      <button class="voice-done-btn" id="voice-stop-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"/>
+        </svg>
+        Done
+      </button>
+    </div>
+  </div>
+
+  <!-- Navigation Buttons -->
+  <div class="nav-buttons">
+    <button class="btn btn-prev" id="btn-prev" disabled>
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="19" y1="12" x2="5" y2="12"/>
+        <polyline points="12 19 5 12 12 5"/>
+      </svg>
+      Previous
+    </button>
+    <button class="btn btn-primary" id="btn-next">
+      Next
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="5" y1="12" x2="19" y2="12"/>
+        <polyline points="12 5 19 12 12 19"/>
+      </svg>
+    </button>
+  </div>
+</div>
