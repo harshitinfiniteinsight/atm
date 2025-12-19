@@ -839,7 +839,7 @@ textarea.answer-input.long {
    ============================================ */
 
 .modal-overlay {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -1019,7 +1019,7 @@ textarea.answer-input.long {
 
 /* Voice Input Container */
 .voice-input-container {
-  position: fixed;
+  position: absolute;
   bottom: 90px;
   right: 16px;
   z-index: 100;
@@ -1148,7 +1148,7 @@ textarea.answer-input.long {
 
 /* Voice Feedback Panel */
 .voice-feedback {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
